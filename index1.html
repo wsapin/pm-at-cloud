@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PM list page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="./style/style1.css">
+<link rel="icon" type="image/png" href="./style/sie-logo-favicon.ico">
+</head>
+<body>
+
+<div class="container">
+  <div class="empty-head-left"></div>
+  <div class="header-left">
+    <!--<img src="./style/sie-logo-claim-petrol-rgb.png" id="sie-logo" height="100%"/>-->
+  </div>
+  <div class="header-right">
+    <span class="links" id="langId" title="Change to German">Deutsch</span>
+    <span class="links" id="contId" title="Contact us per mail">Contact</span>
+    <span class="links" id="adminId" title="Restricted administration area">Administration</span>
+    <span class="links" id="loginId" title="Login">Login</span>
+  </div>
+  <div class="empty-head-right"></div>
+  <div class="nav-left" id='navLeftId'>
+    <div class="dropdown">
+      <span class="navLinksClass" title="Select product groupe">Product group</span>
+      <div class="dropdown-content">
+        <ul>
+          <li><a href="#" id="pgDcm" data-view-type="pgDcm">DCM</a>
+             <ul>
+              <li><a class="product" href="#">Product</a></li>
+              <li><a class="catalog" href="#">Catalog</a></li>
+            </ul>         
+          </li>
+          <li><a href="#" id="pgG120pc" data-view-type="pgG120pc">G120PC</a>
+            <ul>
+              <li><a class="product" href="#">Product</a></li>
+              <li><a class="catalog" href="#">Catalog</a></li>
+            </ul>
+          </li>
+          <li><a href="#" id="pgG130" data-view-type="pgG130">G130</a>
+            <ul>
+              <li><a class="product" href="#">Product</a></li>
+              <li><a class="catalog" href="#">Catalog</a></li>
+            </ul>
+          </li>      
+           <li><a href="#" id="pgG150" data-view-type="pgG150">G150</a>
+            <ul>
+              <li><a class="product" href="#">Product</a></li>
+              <li><a class="catalog" href="#">Catalog</a></li>
+            </ul>
+          </li>     
+          <li><a href="#" id="pgS120" data-view-type="crv">S120</a>
+            <ul>
+              <li><a class="product" href="#">Product</a></li>
+              <li><a class="catalog" href="#">Catalog</a></li>
+            </ul>
+          </li>      
+          <li><a href="#" id="pgS120_2" data-view-type="pgS120_2">S120 Chassis-2</a>
+            <ul>
+              <li><a class="product" href="#">Product</a></li>
+              <li><a class="catalog" href="#">Catalog</a></li>
+            </ul>
+          </li>
+          <li><a href="#" id="pgS120cm" data-view-type="pgS120cm">S120CM</a>
+            <ul>
+              <li><a class="product" href="#">Product</a></li>
+              <li><a class="catalog" href="#">Catalog</a></li>
+            </ul>
+          </li>
+          <li><a href="#" id="pgS150" data-view-type="crv">S150</a>
+            <ul>
+              <li><a class="product" href="#">Product</a></li>
+              <li><a class="catalog" href="#">Catalog</a></li>
+            </ul>
+          </li>
+      </div>
+    </div>
+     <div class="dropdown">
+      <span class="navLinksClass" title="Select catalogue">Order type (MLFB)</span>
+      <div class="dropdown-content">
+        <!-- List generated dynamicaly due to chosen product group -->
+        <a href="#" id="d11Id" data-prod-type="D11">Dummy</a>
+      </div>
+    </div>   
+    
+    <div class="dropdown">
+      <span class="navLinksClass" title="Set view">Views</span>
+      <div class="dropdown-content">
+        <ul>
+          <li><a href="#" id="ad_" data-view-type="ad">Attributs</a>
+             <ul>
+              <li><a class="att_attr" id="attAll" href="#">All</a></li>
+              <li><a class="att_attr" id="attDtk" href="#">DT-K</a></li>
+              <li><a class="att_attr" id="attSsd" href="#">SSD</a></li>                         
+            </ul>         
+          </li>
+          <li><a href="#" data-view-type="ch">Climate attr.</a>
+            <ul>
+              <li><a class="cli_attr" id="cliAttAll" href="#">All</a></li>
+              <li><a class="cli_attr" id="cliAttCon" href="#">Contaminans</a></li>
+              <li><a class="cli_attr" id="cliAttHum" href="#">Humidity</a></li>
+              <li><a class="cli_attr" id="cliAttStr" href="#">Structure</a></li>
+              <li><a class="cli_attr" id="cliAttTem" href="#">Temperature</a></li> 
+            </ul>
+          </li>
+          <li><a href="#" data-view-type="crv">Components attr.</a>
+            <ul>
+              <li><a class="com_attr" id="comAttAll" href="#">All</a></li>
+              <li><a class="com_attr" id="comAttDcl" href="#">DC-link</a></li>
+              <li><a class="com_attr" id="comAttLin" href="#">Line</a></li>
+              <li><a class="com_attr" id="comAttMot" href="#">Motor</a></li>
+            </ul>
+          </li>
+          <li><a href="#" data-view-type="dd">Connection attr.</a>
+            <ul>
+              <li><a class="con_attr" id="conAttAll" href="#">All</a></li>
+              <li><a class="con_attr" id="conAttBra" href="#">Braking resist.</a></li>
+              <li><a class="con_attr" id="conAttCom" href="#">Components</a></li>
+              <li><a class="con_attr" id="conAttDcl" href="#">DC-link</a></li>
+              <li><a class="con_attr" id="conAttExt" href="#">External</a></li>
+              <li><a class="con_attr" id="conAttGen" href="#">General</a></li>
+              <li><a class="con_attr" id="conAttGro" href="#">Grounding</a></li>
+              <li><a class="con_attr" id="conAttMot" href="#">Motor</a></li>
+              <li><a class="con_attr" id="cconAttRea" href="#">Reactor</a></li>
+              <li><a class="con_attr" id="conAttSup" href="#">Supply</a></li>
+            </ul>
+          </li>
+          <li><a href="#" data-view-type="ed">Digital signal attr.</a>
+            <ul>
+              <li><a class="dig_attr" id="digAttAll" href="#">All</a></li>
+              <li><a class="dig_attr" id="digAttInp" href="#">Input</a></li>
+              <li><a class="dig_attr" id="digAttOut" href="#">Output</a></li>
+            </ul>
+          </li>
+          <li><a href="#" data-view-type="md">Electrical attr.</a>
+            <ul>
+              <li><a class="ele_attr" id="eleAttAll" href="#">All</a></li>
+              <li><a class="ele_attr" id="eleAttAux" href="#">Auxiliary sys.</a></li>
+              <li><a class="ele_attr" id="eleAttCon" href="#">Control sys.</a></li>
+              <li><a class="ele_attr" id="eleAttCur" href="#">Current</a></li>
+              <li><a class="ele_attr" id="eleAttDcl" href="#">DC-link</a></li>
+              <li><a class="ele_attr" id="eleAttEnv" href="#">Environment</a></li>
+              <li><a class="ele_attr" id="eleAttExc" href="#">Excitation</a></li>
+              <li><a class="ele_attr" id="eleAttFre" href="#">Frequence</a></li>
+              <li><a class="ele_attr" id="eleAttNet" href="#">Network</a></li>
+              <li><a class="ele_attr" id="eleAttPow" href="#">Power losses</a></li>
+              <li><a class="ele_attr" id="eleAttRat" href="#">Rated power</a></li>
+              <li><a class="ele_attr" id="eleAttStr" href="#">Structure</a></li>
+              <li><a class="ele_attr" id="eleAttVol" href="#">Voltage</a></li>
+            </ul>
+          </li>
+          <li><a href="#" id="op_" data-view-type="ops">Mechanical</a>
+             <ul>
+              <li><a class="mec_attr" id="mecAttAll" href="#">All</a></li>
+              <li><a class="mec_attr" id="mecAttDim" href="#">Dimensions</a></li>
+              <li><a class="mec_attr" id="mecAttEnv" href="#">Environment</a></li>
+              <li><a class="mec_attr" id="mecAttLoa" href="#">Load</a></li>
+              <li><a class="mec_attr" id="mecAttPro" href="#">Protection</a></li>
+              <li><a class="mec_attr" id="mecAttStr" href="#">Structure</a></li>
+              <li><a class="mec_attr" id="mecAttWei" href="#">Weight</a></li>
+            </ul>         
+          </li>
+          <li><a href="#" id="ml" data-view-type="mlfb">Others</a>
+            <ul>
+              <li><a class="oth_attr" id="othAttAll" href="#">All</a></li>
+              <li><a class="oth_attr" id="othAttAcu" href="#">Acustic</a></li>
+              <li><a class="oth_attr" id="othAttAcu" href="#">Coating</a></li>
+              <li><a class="oth_attr" id="othAttCom" href="#">Comments</a></li>
+              <li><a class="oth_attr" id="othAttCoo" href="#">Cooling</a></li>
+              <li><a class="oth_attr" id="othAttLog" href="#">Logistic</a></li>
+              <li><a class="oth_attr" id="othAttNet" href="#">Network comp.</a></li>
+              <li><a class="oth_attr" id="othAttSer" href="#">Service</a></li>
+              <li><a class="oth_attr" id="othAttSta" href="#">Standards</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="dropdown">
+      <span class="navLinksClass" title="Select an action">Actions</span>
+      <div class="dropdown-content">
+       <ul>
+        <li><a href="#" id="edANavId" data-action-type="ex">Export data</a>
+          <ul>
+            <li><a href="#" class="exp_dat" id="expDatDtk">DT-K</a></li>
+            <li><a href="#" class="exp_dat" id="expDatSsd">SSD</a></li>
+          </ul>
+        </li>
+        <li><a href="#" id="imANavId" data-action-type="im">Import data</a>
+          <ul>
+            <li><a href="#" class="imp_dat" id="impDatDtk">DT-K</a></li>
+            <li><a href="#" class="imp_dat" id="impDatSsd">SSD</a></li>
+          </ul>
+        </li>       
+        <!--<li><a href="#" class="lif_cyc_man" id="lifCycMan" data-action-type="lcm">Life cycle mgmt.</a></li> -->
+        <li><a href="#" class="pri_" id="pri" data-action-type="pr">Print</a></li>        
+        <li><a href="#" class="rel_his" id="relHis" data-action-type="rh">Release history</a></li>
+       </ul>
+      </div>
+    </div>
+  </div>
+  <div class="nav-right">
+    <input class='searchElsClass' id="searchInputField" type="text" placeholder="Search for ..." title="Full text search"></input>
+    <img class='searchElsClass' id="searchBtnId" title="Start search" src="./style/Refresh.png">
+  </div>
+  <div class="main">
+    <div id="mainNaId">
+      <h1 id="mainH1"><i>PM</i>@Cloud</h1>
+      <h2 id="mainH2"></h2>
+      <div id="editAttr"></div>
+      <section id="mainSection">
+        <p>This application provides data management tasks typical necessary in product management process
+          with focus on data single source and possibility for exporting / inporting product data in specific formats needed
+          e.g. for engineering tools.
+        </p>
+        <p>
+          <!--The target of the project is to optimize data handling and reduce manual data input to a minimum.
+          Additionally, a history track shall be a gain for clarity of status. -->
+        </p>
+      </section>
+    </div>
+  </div>
+  <div class="footer"><span>&#169; Siemens 2018</span></div>
+ </div>
+<!--
+<script src="pm_dom_events.js"></script>
+<script src="pm_table.js"></script>
+<script src="admin.js"></script>
+<script src="pm_ts.js"></script>
+<script src="pm_s120i.js"></script>
+<script src="pm_s120i_data.js"></script>
+<script src="pm_g130.js"></script>
+<script src="pm_products.js"></script>
+<script src="chart.js"></script>
+-->
+</body>
+</html>
